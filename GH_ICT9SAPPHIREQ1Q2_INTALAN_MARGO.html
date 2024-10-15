@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&   display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            color: #B7CCE2;
+            background-color: #101D2A;
+            margin: 0;
+            font-family: "Dosis", sans-serif;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        li >img{
+
+            text-align: center;
+             border-radius: 10px solid #B7CCE2;
+        }
+        .characters img {
+            display: block;
+            margin: 0 auto;
+        }
+        .label {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .form-container {
+            background-color: rgba(1, 12, 23, 0.9);
+            color: #B7CCE2;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 20px 0;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #B7CCE2;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #B7CCE2;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .pr {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #B7CCE2; text-align: center;">Demon Slayer</h1>
+    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/6b17182a3518d7406f0e69687f773f4f.jpg" width="450" alt="Demon Slayer" class="center">
+
+    <p>Demon Slayer is about an anime where there was a boy named <mark>Tanjiro</mark> and his whole family got killed by the demon lord named <mark>Muzan</mark>. Tanjiro's little sister, <mark>Nezuko</mark>, survived but became a demon. Tanjiro's goal from then on was to avenge his family, get stronger, and find a cure for his little sister.</p>
+
+    <h2>Characters</h2>
+    <ul>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Tanjirou_manga.png" width="150" class="characters">
+            <br>
+            <label for="tanjiro" class="label">
+                <a href=https://kimetsu-no-yaiba.fandom.com/wiki/Tanjiro_Kamado target="blank"> Tanjiro Kamado</a>
+            </label>
+        </li>
+        <li>
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/NezukoKamado.png" width="150" class="characters">
+            <br>
+            <label for="nezuko" class="label">
+                <a href=https://kimetsu-no-yaiba.fandom.com/wiki/Nezuko_Kamado target="blank">Nezuko</a>
+            </label>
+        </li>
+        <li>
+            <img src="https://static.wikia.nocookie.net/anime/images/f/ff/Zenitsuagatsuma.png/revision/latest?cb=20200902223037" width="123" class="characters">
+            <br>
+            <label for="zenitsu" class="label">
+                <a href=https://kimetsu-no-yaiba.fandom.com/wiki/Zenitsu_Agatsuma target="blank">Zenitsu Agatsuma</a>
+            </label>
+        </li>
+        <li>
+            <img src="https://static.wikia.nocookie.net/theunitedorganizationtoonsheroes/images/2/2f/Inosuke.png/revision/latest?cb=20210713074309" width="218" class="characters">
+            <br>
+            <label for="inosuke" class="label">
+                <a href=https://kimetsu-no-yaiba.fandom.com/wiki/Inosuke_Hashibira target="blank">Inosuke Hashibira</a>
+            </label>
+        </li>
+    </ul>
+    <div class="form-container">
+        <div class="content">
+            <h3>What can you say about Demon Slayer?</h3>
+            <form action="/submit">
+                <div class="form-group">
+                    <label for="comments">Comments and Suggestions:</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Give a short review..."></textarea>
+                </div>
+                <button type="submit">Comment</button>
+            </form>
+        
+            <h3>Anime Recommendations</h3>
+            <form action="/submit">
+                <div class="form-group">
+                    <label for="AnimeSelections">Select from the Dropdown: Movie Recommendations:</label>
+                    <select id="AnimeSelections" name="anime">
+                        <option value="jujutsu-kaisen">Jujutsu Kaisen (October 3, 2020)</option>
+                        <option value="attack-on-titan">Attack on Titan (April 7, 2013)</option>
+                        <option value="my-hero-academia">My Hero Academia (April 3, 2016)</option>
+                        <option value="tokyo-ghoul">Tokyo Ghoul (December 19, 2014)</option>
+                        <option value="chainsaw-man">Chainsaw Man (October 12, 2022)</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <h3>Got another recommendation?</h3>
+            <form action="/submit">
+                <div class="form-group">
+                    <label for="animeRec">Input Movie Title:</label>
+                    <input type="text" id="animeRec" name="animeRec" placeholder="Enter anime title">
+                </div>
+                <button type="submit">Recommendation</button>
+            </form>
+        </div>
+    </div>
+
+    <p class="pr">Submitted by: Margo Intalan | 9 SAPPHIRE </p>
+</body>
+</html>
